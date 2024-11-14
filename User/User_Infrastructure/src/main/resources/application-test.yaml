@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/ChatApp
+    username: postgres
+    password: password
+
+  jpa:
+    show-sql: true
+    generate-ddl: true
+
+    hibernate:
+      ddl-auto: validate
+
+logging:
+  level:
+    org:
+      hibernate:
+        SQL: debug
+
+bucket:
+  name: ${StoreBucketName}
